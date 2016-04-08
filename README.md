@@ -1,3 +1,23 @@
+# Fork!
+
+[ldx](https://github.com/ldx) made a great addition to the cryptography of Ansible 1.9, which I believe was integrated for Ansible 2. Unfortunately, we're still using 1.9 and his fork only goes up to 1.9.2 which is not the latest. This is introducing problems so I'm simply reintroducing his changes for an updated fork.
+
+Install from source:
+- Pull the newest code
+  - Clone:
+    - git clone git://github.com/JScott/ansible.git --recursive
+    - cd ./ansible
+  - Update:
+    - git pull --rebase
+    - git submodule update --init --recursive
+- source ./hacking/env-setup
+- sudo pip install paramiko PyYAML jinja2 cryptography
+- brew install openssl
+
+Make sure to add that source line to your profile or rc file so it sources on every shell.
+
+---
+
 [![PyPI version](https://badge.fury.io/py/ansible.png)](http://badge.fury.io/py/ansible)
 [![PyPI downloads](https://pypip.in/d/ansible/badge.png)](https://pypi.python.org/pypi/ansible)
 [![Build Status](https://travis-ci.org/ansible/ansible.svg?branch=tox_and_travis)](https://travis-ci.org/ansible/ansible)
