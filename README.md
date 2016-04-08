@@ -14,6 +14,8 @@ Install from source:
 - sudo pip install paramiko PyYAML jinja2 cryptography
 - brew install openssl
 
+Make sure to add that source line to your profile or rc file so it sources on every shell.
+
 ---
 
 [![PyPI version](https://badge.fury.io/py/ansible.png)](http://badge.fury.io/py/ansible)
