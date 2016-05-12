@@ -5,7 +5,7 @@
 Install from source:
 - Pull the newest code
   - Clone:
-    - git clone git://github.com/JScott/ansible.git --recursive
+    - git clone git@github.com:saucelabs-ansible/ansible.git --recursive
     - cd ./ansible
   - Update:
     - git pull --rebase
